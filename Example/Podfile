@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MSDKCore_Example' do
+  pod 'MSDKCore', :path => '../'
+
+  target 'MSDKCore_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
