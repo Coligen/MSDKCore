@@ -8,35 +8,25 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSDKCore'
-  s.version          = '0.1.0'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of MSDKCore.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Coligen SDK for Mobile Phone'
 
-  s.homepage         = 'https://github.com/359796875@qq.com/MSDKCore'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/Coligen'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '359796875@qq.com' => 'pengyuehui@adse.cc' }
-  s.source           = { :git => 'https://github.com/359796875@qq.com/MSDKCore.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'zhoubing@coligen.com' => 'zhoubing@coligen.com' }
+  s.source           = { :git => 'https://github.com/Coligen/MSDKCore.git', :tag => s.version.to_s }
+
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'MSDKCore/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MSDKCore' => ['MSDKCore/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'MSDKCore/Classes/**/*'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
+  
+  s.vendored_frameworks = 'MSDKCore/**/*.framework'
+  
 end

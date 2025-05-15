@@ -1,0 +1,6 @@
+framework module MSDKCore {
+  umbrella header "MSDKCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
