@@ -1,22 +1,26 @@
 {
   "name": "MSDKCore",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "summary": "A short description of MSDKCore.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/359796875@qq.com/MSDKCore",
+  "description": "Coligen SDK for Mobile Phone",
+  "homepage": "https://github.com/Coligen",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "359796875@qq.com": "pengyuehui@adse.cc"
+    "zhoubing@coligen.com": "zhoubing@coligen.com"
   },
   "source": {
-    "git": "https://github.com/359796875@qq.com/MSDKCore.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Coligen/MSDKCore.git",
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "MSDKCore/Classes/**/*"
+  "source_files": "MSDKCore/Classes/**/*",
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 arm64"
+  },
+  "vendored_frameworks": "MSDKCore/**/*.framework"
 }

@@ -8,9 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSDKCore'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of MSDKCore.'
-
 
   s.description      = 'Coligen SDK for Mobile Phone'
 
@@ -19,14 +18,9 @@ Pod::Spec.new do |s|
   s.author           = { 'zhoubing@coligen.com' => 'zhoubing@coligen.com' }
   s.source           = { :git => 'https://github.com/Coligen/MSDKCore.git', :tag => s.version.to_s }
 
-
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'MSDKCore/Classes/**/*'
-  
   s.source_files = 'MSDKCore/Classes/**/*'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
-  
   s.vendored_frameworks = 'MSDKCore/**/*.framework'
   
 end

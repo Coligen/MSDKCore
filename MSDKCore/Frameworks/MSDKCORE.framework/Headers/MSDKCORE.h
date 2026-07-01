@@ -9,6 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#ifndef MSDKCORE_EXPORT
+#define MSDKCORE_EXPORT __attribute__((visibility("default")))
+#endif
+
+MSDKCORE_EXPORT
 @interface MSDKCORE : NSObject
 
 + (MSDKCORE *)shareInstance;
